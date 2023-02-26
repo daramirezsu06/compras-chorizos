@@ -182,8 +182,16 @@ function eliegecant(a){
         
 
         const buttoncart=document.createElement('button')
-        buttoncart.textContent='Agregar'
+        
         buttoncart.id=element.id
+
+        const canastalink=document.createElement('a')
+        canastalink.href="./canasta.html"
+        canastalink.textContent='Agregar'
+        canastalink.className='canasta-link'
+
+        buttoncart.appendChild(canastalink);
+
         
 
 
