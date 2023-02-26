@@ -330,6 +330,10 @@ body{
     
     
 }
+.secundary-button1 a{
+    color: white;
+    text-decoration: none;
+}
 .canasta-link{
     text-decoration: none;
 }

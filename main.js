@@ -321,11 +321,17 @@ function prender2(){
     })
 
     const enviarpedido=document.createElement('button')
+    const seguircomprando=document.createElement('button')
+    const seguircomprandolink=document.createElement('a')
+    seguircomprandolink.href='./categorias.html'
+    seguircomprando.appendChild(seguircomprandolink)
+    seguircomprandolink.textContent='Seguir Comprando';
+    seguircomprando.className='secundary-button1';
     enviarpedido.textContent='enviar el pedio';
     enviarpedido.className='secundary-button1';
 
     
-    maincanasta.appendChild(enviarpedido)
+    maincanasta.append(enviarpedido,seguircomprando)
     
 
     maincanasta.addEventListener('click',eliminaritem)
